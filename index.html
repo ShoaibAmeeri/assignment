@@ -1,88 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        header, main{
-            width: 100%;
+        p{
+            width: 40vw;
+            height: 30vh;
+            border: 2px solid green;
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            /* overflow: auto; */
+            /* overflow-x: scroll;
+            overflow-y: hidden; */
+            white-space: nowrap;
+            overflow: auto hidden;
+        
         }
-      div {
-        float: left;
-      }
 
-      .div1 {
-        width: 70%;
-      }
+        a{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-size: x-large;
+        }
+        a:hover{
+            background-color: blue;
+            color: rgb(230, 230, 8);
+        }
 
-      .images {
-        margin-top: 60px;
-        width: 30%;
-      }
+        a:link{
+            background-color: aqua;
+        }
 
-      .images img {
-        width: 50px;
-      }
-      .para{
-        width: 35%;
-      }
+        a:visited{
+            background-color: pink;
+            color: brown;
+        }
 
-      /* .left{
-        width: 30%;
-      } */
+        .parent{
+            display: flex;
+            /* flex-wrap: wrap; */
+            padding: 20px;
+            border: 2px solid black;
+            height: 40vh;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .div{
+            width: 10vw;
+            height: 20vh;
+            margin: 5px;
+            border: 2px solid green;
+            background-color: blueviolet;
+        }
+
+        
+
     </style>
-  </head>
-  <body>
-    <div>
-      <header>
-        <div class="div1">
-          <h1>Ara profile</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
-            numquam quam itaque repellat quaerat, iure, voluptatibus commodi
-            iusto deleniti quos totam consequatur recusandae, cum eos voluptatum
-            quo maiores ut eligendi.
-          </p>
-        </div>
-        <div class="images">
-          <img src="../Capture.PNG" alt="" />
-          <img src="../Capture.PNG" alt="" />
-          <img src="../Capture.PNG" alt="" />
-        </div>
-      </header>
+</head>
+<body>
 
-      <main>
-        <div class="left">
-          <img src="./Capture.PNG" width="90%" alt="" />
-        </div>
+    <a href="https://www.google.com">this is home</a>
+    <a href="https://www.facebook.com">instagram</a>
+    <p>
+        hello im Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum in voluptatibus debitis mollitia dicta non id enim possimus culpa voluptate esse est omnis blanditiis pariatur, porro natus autem, quia quo sed, aut asperiores! Ut, pariatur ducimus cum veniam a sed laboriosam voluptas accusamus labore suscipit eligendi sit molestias ratione nisi quaerat harum tenetur enim minima repellat voluptatem ab quibusdam atque!
+        hello im Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum in voluptatibus debitis mollitia dicta non id enim possimus culpa voluptate esse est omnis blanditiis pariatur, porro natus autem, quia quo sed, aut asperiores! Ut, pariatur ducimus cum veniam a sed laboriosam voluptas accusamus labore suscipit eligendi sit molestias ratione nisi quaerat harum tenetur enim minima repellat voluptatem ab quibusdam atque!
+        hello im Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum in voluptatibus debitis mollitia dicta non id enim possimus culpa voluptate esse est omnis blanditiis pariatur, porro natus autem, quia quo sed, aut asperiores! Ut, pariatur ducimus cum veniam a sed laboriosam voluptas accusamus labore suscipit eligendi sit molestias ratione nisi quaerat harum tenetur enim minima repellat voluptatem ab quibusdam atque!
+    </p>
 
-        <div class="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          voluptas illum dignissimos quia dolore nulla, ratione iste adipisci
-          nesciunt pariatur cum commodi quibusdam. Est, in non facilis quae
-          nulla ipsam! Error dignissimos non, nemo id sequi laudantium dolorem
-          libero? Ipsum.
-        </div>
-        <div class="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          voluptas illum dignissimos quia dolore nulla, ratione iste adipisci
-          nesciunt pariatur cum commodi quibusdam. Est, in non facilis quae
-          nulla ipsam! Error dignissimos non, nemo id sequi laudantium dolorem
-          libero? Ipsum.
-        </div>
-        <div class="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          voluptas illum dignissimos quia dolore nulla, ratione iste adipisci
-          nesciunt pariatur cum commodi quibusdam. Est, in non facilis quae
-          nulla ipsam! Error dignissimos non, nemo id sequi laudantium dolorem
-          libero? Ipsum.
-        </div>
-        <div class="left" >
-            <img src="./Capture.PNG" width="100%" alt="" />
-        </div>
-      </main>
+    <div class="parent">
+        <div class="div first"></div>
+        <div class="div Second"></div>
+        <div class="div third"></div>
+        <div class="div fourth"></div>
     </div>
-  </body>
+    
+</body>
 </html>

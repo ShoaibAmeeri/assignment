@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --color: rgb(215, 45, 73);
+        --divBgColor: yellow;
+        --divTxtColor: rgb(152, 7, 7);
+        --divMg: 5px;
+      }
+
+      ul li:first-child {
+        background-color: aqua;
+      }
+
+      .div div {
+        width: 300px;
+        height: 100px;
+        display: inline-block;
+      }
+
+      .div div:nth-child(1) {
+        background-color: var(--color);
+        border: 2px solid green;
+      }
+
+      .div div {
+        background-color: var(--divBgColor);
+        margin: var(--divMg);
+      }
+
+      .div div:last-child {
+        --color: green;
+        background-color: var(--color);
+      }
+
+      .div div:last-child p{
+        width: 20vh;
+        background-color: var(--color);
+      }
+
+      p{
+        background-color: var(--color);
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>home</li>
+      <li>About</li>
+      <li>Event</li>
+    </ul>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam
+      quidem odio non minus inventore nihil repellendus beatae laudantium,
+      magnam blanditiis, exercitationem sequi id, ullam quia accusamus
+      perspiciatis numquam fuga.
+    </p>
+    <div class="div">
+      <div>this is first div</div>
+      <div>this is second div</div>
+      <div>
+        this is last div
+
+        <p>
+          Lorem ipsum 
+        </p>
+      </div>
+
+    </div>
+    <p>this is outside paragraph</p>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 60%;
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            border: 2px solid green;
+            background-color: brown;
+            flex-direction: column;
+        }
+
+        .grand-parent{
+            background-color: blue;
+        }
+
+        .grand-parent >div{
+            background-color: aqua;
+        }
+
+
+        .main{
+            height: 50vh;
+
+        }
+
+        .sub{
+            height: 50px;
+        }
+
+        .main .sub:first-child{
+            background-color: blueviolet;
+        }
+
+        .main .sub:nth-child(3){
+            background-color: aqua;
+        }
+
+        
+/* 
+        body .grand-parent:first-child{
+            outline: 4px solid yellow;
+        } */
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="grand-parent" style="height: 80vh;">
+        
+        <div style="height: 40vh;">
+           
+            <div style="height: 30vh;">
+               
+                <div style="height: 20vh;">
+                </div>
+            </div>
+        </div>
+        <div style="height: 30vh;"></div>
+    </div>
+
+    <div class="main">
+        <div class="sub"></div>
+        <div class="sub"></div>
+        <div class="sub"></div>
+        <div class="sub"></div>
+        <div class="sub"></div>
+    </div>
+</body>
+</html>

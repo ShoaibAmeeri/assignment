@@ -1,0 +1,162 @@
+// operators
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
+
+// Logical Operators
+// &&, ||, !
+
+// !
+
+
+let ans = !console.log(!"ABC");
+console.log(ans);
+
+
+
+// let ans = !console.log("Hello");
+// console.log(ans);//
+
+
+
+
+
+// ||
+// T || T = T
+// T || F = T
+// F || T = T
+// F || F = F
+
+// short circuit operator
+// expr1-truthy || whatever = expr1-truthy
+// expr1-falsy || expr2 = expr2
+
+// let ans = Infinity || "20 < 100";
+// console.log(ans);
+
+
+
+// &&
+// T && T = T
+// T && F = F
+// F && T = F
+// F && F = F
+
+// Truthy-Expre && expr = expr
+// Falsy-Expr && whatever = Falsy-Expr
+
+// short circuit operator
+// let ans = 20-10-5-5 && "Lahore";
+// console.log(ans);
+
+
+
+
+// let ans = "" && "Lahore";
+// console.log(ans);
+
+
+// let ans = 20 > 10 && "Lahore";
+// console.log(ans);
+
+
+// let error = false;
+// error && console.log("Error in loaing data.")
+
+
+
+
+
+// let ans = 2 < 10 && 30 > 15;
+// console.log(ans);
+
+
+
+
+
+// Comparison operators (==, ===)
+// >, >=, < , <=, ==, !=
+// == (loose equlaity check), !=
+// === (strict eq check), !==
+// let x = 10 == "10";
+// console.log(x)
+
+
+
+
+
+// TRNARY OPERATOR (conditional operator) - if-expr
+// statement / expression
+
+
+// let x = 1000;
+// let y = 40;
+// let z = 20;
+// let max = x > y ? (x > z ? x : z) : (y > z ? y : z);
+// console.log(max);
+
+
+// let x = 1000;
+// let y = 400;
+// let z = 2000;
+// let max = x > y && x > z ? x : (y > z ? y : z);
+// console.log(max);
+
+
+
+// let x = 100;
+// let y = 400;
+// let max = x > y ? x : y;
+// console.log(max);
+
+
+
+
+// let marks = 80;
+// console.log(marks >= 50 ? "Pass" : "Fail");
+
+
+// let marks = 8;
+// let result = marks >= 50 ? "Pass" : "Fail";
+// console.log(result);
+
+
+// if(marks >= 50)
+//     console.log("Pass")
+// else
+//     console.log("Fail");
+
+
+
+
+
+
+// ++x, x++
+// let x = 10;
+// let y = ++x + 5;
+// console.log(y);
+// console.log(x); // 11
+// f(x++)
+
+// let x = 10;
+// x = x + 1;
+// x += 1;
+// x++;
+// ++x;
+// console.log(x);
+
+
+// precedence , associativity (L -> R, R -> L)
+// * /
+// + -
+// let ans = 2 - 3 * 5;
+// console.log(ans);
+
+
+// let ans = (2 + 3) * 5;
+// console.log(ans);
+
+
+// Arithmetic
+// let x = 5;
+// let y = 3;
+// let ans = x ** y;
+// console.log(ans);
